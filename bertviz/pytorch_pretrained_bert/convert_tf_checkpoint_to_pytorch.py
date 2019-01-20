@@ -28,8 +28,8 @@ import numpy as np
 from .modeling import BertConfig, BertForPreTraining
 
 def convert_tf_checkpoint_to_pytorch(tf_checkpoint_path, bert_config_file, pytorch_dump_path):
-    config_path = os.path.abspath(bert_config_file)
-    tf_path = os.path.abspath(tf_checkpoint_path)
+    #config_path = os.path.abspath(bert_config_file)
+    #tf_path = os.path.abspath(tf_checkpoint_path)
     print("Converting TensorFlow checkpoint from {} with config at {}".format(tf_path, config_path))
     # Load weights from TF model
     init_vars = tf.train.list_variables(tf_path)
